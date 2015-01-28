@@ -73,7 +73,7 @@ function watchPosition(position){
     imgObj.onload = function() {
      context.drawImage(imgObj, 0, 0);
     };
-    imgObj.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '%C2%B0&zoom=14&sensor=false&size=400x400&maptype=roadmap&style=lightness:15|gamma:1.31|hue:0x0008ff|saturation:-50|invert_lightness:true';
+    imgObj.src = 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '&zoom=14&sensor=false&size=400x400&maptype=roadmap&style=lightness:15|gamma:1.31|hue:0x0008ff|saturation:-50|invert_lightness:true&markers=icon:http://goo.gl/Q4vGcB|' + latitude + ',' + longitude;
     
 };
     
