@@ -41,14 +41,14 @@ function watchPosition(position){
         mapCanvas.style.marginTop = '10%';
         mapCanvas.setAttribute('class', 'staticMap');
         mapCanvas.style.backgroundColor = '#a2a2a2';
-        mapCanvas.style.boxShadow = '5px 5px 8px #888888';
         wrapper.appendChild(mapCanvas);
     
     var coordsData = document.createElement('p');
         coordsData.setAttribute('class','coords');
         coordsData.style.maxWidth = '400px';
         coordsData.style.textAlign = 'center';
-        coordsData.style.boxShadow = '5px 5px 8px #888888';
+        coordsData.style.background = 'black';
+        coordsData.style.color = '#a5a5a5';
         coordsData.innerHTML += 'Your Current Location <br><br>Latitude: ' + position.coords.latitude + '&deg<br>' + 'Longitude: ' + position.coords.longitude + '&deg<br>' + 'Accuracy: ' + position.coords.accuracy + 'm<br>' + 'Time: ' + (position.timestamp); 
         wrapper.appendChild(coordsData);
     
@@ -56,9 +56,13 @@ function watchPosition(position){
     locationInput.setAttribute('type','text');
     locationInput.setAttribute('id','userLocation');
     locationInput.style.marginLeft = '21%';
+    locationInput.style.background = '#c7c7c7';
+    locationInput.style.border = 'a5a5a5';
+    locationInput.style.marginRight = '10px';
     wrapper.appendChild(locationInput);
     var locationButton = document.createElement('input');
     locationButton.setAttribute('type','button');
+    locationButton.style.background = '#a5a5a5';
     locationButton.setAttribute('value','Change Location');
     locationButton.setAttribute('onclick','getUserLocation()');
     wrapper.appendChild(locationButton);
