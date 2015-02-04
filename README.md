@@ -1,7 +1,9 @@
 # Geolocation Assignment
 ## January 27, 2015
 **By: Ross Foran**
+
 ———————————————————————
+
 ###Geolocation assignment for Algonquin College Program Winter Semester 2015
 This project is to practice the use of google static maps based on the users location.
 I have also added the option at the bottom to enter in different locations so the user may update the map in case of location error.
