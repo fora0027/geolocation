@@ -2,7 +2,7 @@
 ## January 27, 2015
 **By: Ross Foran**
 
-———————————————————————
+-----
 
 ###Geolocation assignment for Algonquin College Program Winter Semester 2015
 This project is to practice the use of google static maps based on the users location.
